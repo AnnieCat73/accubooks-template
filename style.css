@@ -192,4 +192,212 @@ body {
   font-size: var(--fs-400);
 }
 
+/*Typography*/
 
+
+h2,
+h3,
+h4 {
+  font-family: var(--ff-sans);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h2 {
+  
+  font-weight: var(--fw-700);
+}
+
+h3 { 
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  letter-spacing: -0.017px;
+}
+
+/*small body/base text styles*/
+.text-300 {
+  font-size: var(--fs-300);
+  line-height: 1.75;
+}
+
+/*Label styles*/
+.label {
+  font-size: var(--fs-300);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+/*UTILITY CLASSES*/
+
+/*Container holding the main content where max-width is 1440px*/
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-small {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/*Section padding*/
+section {
+  padding: 5.25rem 0;
+}
+
+section:nth-of-type(1) {
+  padding-top: 2rem;
+  padding-bottom: 5.25rem;
+}
+
+/*section:last-of-type {
+  padding: 0;
+}*/
+
+/*Text spacing*/
+.flow-content-small > * + * { 
+  margin-top: 1rem;/*16px*/
+}
+
+/*Spacing between section heading and next element not part of section heading*/
+.flow-content-large > * + * { 
+  margin-top: 2.5rem;/*40px*/
+}
+
+/*Flexbox*/
+.split {
+  display: flex;
+  align-items: center;
+}
+
+.split-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*tablet*/
+@media (min-width: 48em) {
+  section {
+    padding: 6rem 0;
+  }
+  
+  section:nth-of-type(1) {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .flow-content-small > * + * { 
+    margin-top: 1.5rem;/*24px*/
+  }
+
+  .flow-content-large > * + * { 
+    margin-top: 3rem;/*48px*/
+  }
+}
+
+/*desktop*/
+@media (min-width: 87.5em) {
+  section {
+    padding: 7.5rem 0;
+  }
+  
+  section:nth-of-type(1) {
+    padding-top: 3.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .flow-content-large > * + * { 
+    margin-top: 3.5rem;/*56px*/
+  }
+}
+
+
+
+/*COMPONENTS*/
+
+/*Button styles*/
+
+/*General button styles*/
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--br);
+  font-size: var();
+  font-weight: var(--fw-500);
+  letter-spacing: .02rem;
+  padding: 0.875em 1.875em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+}
+
+/*Primary button styles*/
+.btn-primary {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--clr-hover);
+}
+
+/*Secondary button styles*/
+.btn-secondary {
+  background-color: var(--clr-bg-200);
+  border: 1px solid var(--clr-neutral-300);
+  color: var(--clr-neutral-300);
+  
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--clr-hover);
+  color: var(--clr-neutral-100);
+}
+
+/*scroll animation for each section*/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*underline animation for each section*/
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-50%);/*can also do -100px*/
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);/*can also do 0%*/
+}
