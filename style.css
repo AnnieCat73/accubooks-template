@@ -297,7 +297,7 @@ section:nth-of-type(2) {
   }
   
   section:nth-of-type(2) {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-bottom: 6rem;
   }
 
@@ -317,7 +317,7 @@ section:nth-of-type(2) {
   }
   
   section:nth-of-type(2) {
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     padding-bottom: 7.5rem;
   }
 
@@ -415,14 +415,8 @@ section:nth-of-type(2) {
   margin-top: 1em;
 }
 
-
-
 /*HEADER*/
 
-
-
-
-/*Header*/
 header a {
   text-decoration: none;
 }
@@ -435,10 +429,7 @@ nav .container-nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
- 
 }
-
-
 
 nav {
   background: var(--clr-bg-200);
@@ -450,7 +441,6 @@ nav {
   font-weight: var(--fw-700);
   color: var(--clr-neutral-300);
   transition: all ease-in-out .3s;
-  
 }
 
 .logo-text:hover,
@@ -470,9 +460,9 @@ nav .navbar ul li a {
   opacity: 0.9;
   transition: all ease-in-out .3s;
 }
+
 nav .navbar ul li a:hover,
 nav .navbar ul li a:focus {
-  
   opacity: 1;
 }
 
@@ -517,8 +507,6 @@ nav .btn {
   margin-top: 1rem;
 }
 
-
-
 /*Hamburger*/
 nav .hamburger {
   transition: opacity .3s;
@@ -539,16 +527,15 @@ nav .hamburger .line {
 }
 /* end of hamburger */
 
-
-
-
 @media (min-width: 48em) {
   nav {
     background-color: var(--clr-bg-100);
   }
+
   nav .hamburger {
     display: none;
   }
+
   nav .navbar {
    display: flex;
    gap: 2rem;
@@ -567,10 +554,12 @@ nav .hamburger .line {
 		flex-direction: row;
 	  gap: 1.5rem;
 	}
+
   nav ul li a {
     color: var(--clr-neutral-300);
     opacity: 0.9;
   }
+
 	nav ul li:hover a {
 		padding-bottom: 4px;
     border-bottom: 2px solid var(--clr-accent-400);
@@ -581,17 +570,15 @@ nav .hamburger .line {
     gap: 1.5rem;
   }
   
-
   nav .btn {
-   
-    margin-top: 0;
+   margin-top: 0;
   }
 }
+
 @media (min-width: 87.5em) {
   nav .container-nav {
     margin: 0rem 6rem;
   }
-  
 }
 
 /*HERO CONTENT*/
@@ -621,23 +608,73 @@ nav .hamburger .line {
   position: absolute;
 }
 
-
 .hero-content {
   gap: 1.5rem;
   align-items: flex-start;
   z-index: 1;
+  padding-top: 18rem;
 }
+
 .hero-headings {
   gap: 1rem;
   align-items: flex-start;
   color: var(--clr-neutral-100);
 }
 
-@media (min-width: 87.5em) {
-  
+@media (min-width: 48em) {
   .hero-content {
-    padding-top: 20rem;
     max-width: 81ch;
   }
+}
+
+@media (min-width: 87.5em) {
+  .hero-content {
+    padding-top: 20rem;
+    
+  }
+}
+
+
+/*BENEFITS SECTION*/
+
+.benefits {
+  background-color: var(--clr-bg-100);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.benefit-card {
+  background-color: var(--clr-bg-100);
+  box-shadow: var(--box-shadow);
+  gap: 1.5rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.benefit-icon {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.benefits-content {
+  gap: 1rem;
+}
+
+@media (min-width: 48em) {
+  .benefits {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 87.5em) {
+  
   
 }
