@@ -595,6 +595,7 @@ nav .hamburger .line {
   background-position: center center;
   min-height: 80vh;
   position: relative;
+  
 }
 
 .hero::after {
@@ -606,6 +607,7 @@ nav .hamburger .line {
   left: 0;
   top: 0;
   position: absolute;
+  
 }
 
 .hero-content {
@@ -674,7 +676,37 @@ nav .hamburger .line {
   }
 }
 
-@media (min-width: 87.5em) {
-  
-  
+/*STATS SECTION*/
+
+.stats {
+  background-color: var(--clr-bg-300);
 }
+
+.stats .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+
+}
+
+.stat-item {
+  align-items: center;
+  color: var(--clr-neutral-100);
+  gap: 1rem;
+}
+
+.stat-item p:nth-of-type(2) {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: var(--fs-900);
+  line-height: 0.7;
+}
+
+@media (min-width: 48em) {
+  .stats .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
