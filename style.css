@@ -891,7 +891,7 @@ nav .hamburger .line {
 @media (min-width: 48em) {
   .about {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   .about-img {
@@ -914,5 +914,67 @@ nav .hamburger .line {
   .about-img {
     background-position: right 0px top 0px;
   }
+}
 
+/*TESTIMONIALS*/
+
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4.5rem
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.business-owner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.business-owner .testimonial-img1 {
+  background-image: url(images/avatar-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110.15px;
+  width: 103px;
+}
+
+.business-owner .testimonial-img2 {
+  background-image: url(images/avatar-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6.938rem;
+  width: 6.438rem;
+}
+
+.business-owner .testimonial-img3 {
+  background-image: url(images/avatar-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110.15px;
+  width: 103px;
+}
+
+.testimonial-info {
+ align-items: flex-start;
+}
+
+.testimonial-info .name {
+  font-weight: var(--fw-700);
+}
+
+.testimonial-info .company {
+  opacity: 0.7;
+}
+
+@media (min-width: 48em) {
+  .testimonials-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
 }
