@@ -326,8 +326,6 @@ section:nth-of-type(2) {
   }
 }
 
-
-
 /*COMPONENTS*/
 
 /*Button styles*/
@@ -711,7 +709,7 @@ nav .hamburger .line {
 }
 
 
-/*SERVICES*/
+/*SERVICES SECTION*/
 
 .services-wrapper {
   display: grid;
@@ -768,6 +766,60 @@ nav .hamburger .line {
   }
 }
 
+/*WORKS SECTION*/
+
+.works {
+  background-color: var(--clr-bg-200);
+}
+
+.works-wrapper {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.works-item {
+  box-shadow: var(--box-shadow);
+  gap: 1rem;
+  padding: 2rem;
+  position: relative;
+  flex-basis: 100%;
+}
+
+.works-item-1::before, .works-item-2::before,
+.works-item-3::before {
+  color: var(--clr-accent-400);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-700);
+}
+
+.works-item-1::before {
+  content: "01";
+  top: -35px;
+  position: absolute;
+}
+
+.works-item-2::before {
+  content: "02";
+  top: -35px;
+  position: absolute;
+}
+
+.works-item-3::before {
+  content: "03";
+  top: -35px;
+  position: absolute;
+}
+
 @media (min-width: 48em) {
+  .works-item {
+    flex-basis: 32%;
+  }
+  
+  .works-item-1::before, .works-item-2::before,
+  .works-item-3::before {
+    top: -40px;
+  }
   
 }
