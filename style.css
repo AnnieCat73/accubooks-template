@@ -275,7 +275,7 @@ section:nth-of-type(2) {
 
 /*Spacing between section heading and next element not part of section heading*/
 .flow-content-large > * + * { 
-  margin-top: 2.5rem;/*40px*/
+  margin-top: 3.5rem;/*56px*/
 }
 
 /*Flexbox*/
@@ -306,7 +306,7 @@ section:nth-of-type(2) {
   }
 
   .flow-content-large > * + * { 
-    margin-top: 3rem;/*48px*/
+    margin-top: 4rem;/*64px*/
   }
 }
 
@@ -322,7 +322,7 @@ section:nth-of-type(2) {
   }
 
   .flow-content-large > * + * { 
-    margin-top: 3.5rem;/*56px*/
+    margin-top: 4.5rem;/*72px*/
   }
 }
 
@@ -713,9 +713,10 @@ nav .hamburger .line {
 
 /*SERVICES*/
 
-.service-wrapper {
+.services-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 2.5rem;
 }
 
 .service {
@@ -730,13 +731,20 @@ nav .hamburger .line {
   background-color: var(--clr-accent-400);
 }
 
+.service-img {
+  font-size: 0;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
 .service-description {
   gap: 1rem;
   align-items: flex-start;
+  margin: 1.5rem 0;
 }
 
 .service-content {
-  gap: 1.5rem;
   padding: 0 1rem 1.5rem 1rem;
 }
 
@@ -745,10 +753,21 @@ nav .hamburger .line {
   color: var(--clr-accent-400);
   font-weight: var(--fw-600);
   align-self: flex-start;
+  
+}
+
+.service .link:hover,
+.service .link:focus {
+  color: var(--clr-hover);
 }
 
 @media (min-width: 48em) {
-  .service-wrapper {
-    
+  .services-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
+}
+
+@media (min-width: 48em) {
+  
 }
