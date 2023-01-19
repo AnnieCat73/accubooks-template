@@ -710,3 +710,45 @@ nav .hamburger .line {
   }
 }
 
+
+/*SERVICES*/
+
+.service-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.service {
+  
+  
+  box-shadow: var(--box-shadow);
+}
+
+.orange-line {
+  height: 1rem;
+  width: 100%;
+  background-color: var(--clr-accent-400);
+}
+
+.service-description {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.service-content {
+  gap: 1.5rem;
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.service .link {
+  font-size: var(--fs-400);
+  color: var(--clr-accent-400);
+  font-weight: var(--fw-600);
+  align-self: flex-start;
+}
+
+@media (min-width: 48em) {
+  .service-wrapper {
+    
+  }
+}
