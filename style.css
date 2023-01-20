@@ -959,9 +959,17 @@ nav .hamburger .line {
   height: 110.15px;
   width: 103px;
 }
+.business-owner .testimonial-img4 {
+  background-image: url(images/avatar-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110.15px;
+  width: 103px;
+}
 
 .testimonial-info {
  align-items: flex-start;
+ gap: 0.5rem;
 }
 
 .testimonial-info .name {
@@ -1029,5 +1037,62 @@ nav .hamburger .line {
   }
 }
 
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--clr-bg-300);
+  color: var(--clr-neutral-100);
+}
+
+footer .logo-text {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+footer .summary p {
+  font-style: italic;
+}
+
+/*Connect*/
+.connect {
+  gap: 1.5rem;
+  align-items: flex-start;
+
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: var(--fw-700);
+}
+
+.connect .email a address {
+  color: var(--clr-neutral-100);
+}
+
+footer .social-icon { 
+  width: 1rem;
+}
+
+.connect-content {
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.socials {
+  gap: 1rem;
+}
+
+.socials a .bi {
+  color: var(--clr-neutral-100);
+}
+
+.footer-company ul li a,
+.footer-services ul li a,
+.footer-product ul li a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
 
 
