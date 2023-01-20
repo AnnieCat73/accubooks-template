@@ -425,7 +425,6 @@ header a {
 
 /*Navigation*/
 nav .container-nav {
-  
   margin: 0rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -476,6 +475,7 @@ nav .navbar ul li a:focus {
 		transform: translateY(0); 
 	}
 }
+
 @keyframes slideIn {
 	from { 
 		transform: translateY(-100%); 
@@ -615,8 +615,9 @@ nav .hamburger .line {
 .hero-content {
   gap: 1.5rem;
   align-items: flex-start;
+  justify-content: center;
   z-index: 1;
-  padding-top: 18rem;
+  
 }
 
 .hero-headings {
@@ -628,6 +629,7 @@ nav .hamburger .line {
 @media (min-width: 48em) {
   .hero-content {
     max-width: 81ch;
+    padding-top: 15rem;
   }
 }
 
@@ -778,18 +780,16 @@ nav .hamburger .line {
 }
 
 .works-wrapper {
-  display: flex;
+  display: grid;
   gap: 6rem;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  grid-template-columns: 1fr;
 }
 
 .works-item {
   box-shadow: var(--box-shadow);
   gap: 1rem;
-  padding: 2rem;
+  padding: 3rem;
   position: relative;
-  flex-basis: 100%;
 }
 
 .works-item-1::before, .works-item-2::before,
@@ -817,9 +817,13 @@ nav .hamburger .line {
   position: absolute;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 56em) {
+  .works-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
   .works-item {
-    flex-basis: 32%;
+    padding: 1.5rem;
   }
 
   .works-item-1::before, .works-item-2::before,
