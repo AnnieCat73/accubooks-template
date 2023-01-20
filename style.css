@@ -201,6 +201,7 @@ h4 {
   font-family: var(--ff-sans);
   letter-spacing: -0.02em;
   line-height: 1.2;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -208,6 +209,7 @@ h1 {
   font-weight: var(--fw-700);
   letter-spacing: -0.02em;
   line-height: 1.25;
+  text-transform: capitalize;
 }
 
 h2 {
@@ -1182,6 +1184,28 @@ footer .social-icon {
     padding: 7.5rem 0;
   }
 }
+
+
+/*OTHER PAGES*/
+
+/*404*/
+
+.page-content {
+  margin: 7.5rem 0;
+  padding: 0 1.5rem;
+}
+
+.container-x-small {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.page-content h1 {
+  color: var(--clr-accent-400);
+  text-align: center;
+}
+
+
 
 
 
