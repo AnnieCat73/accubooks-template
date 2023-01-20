@@ -931,8 +931,9 @@ nav .hamburger .line {
 }
 
 .business-owner {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
   gap: 1rem;
 }
 
@@ -940,8 +941,8 @@ nav .hamburger .line {
   background-image: url(images/avatar-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110.15px;
-  width: 103px;
+  height: 6.938rem;
+  width: 6.438rem;
 }
 
 .business-owner .testimonial-img2 {
@@ -956,28 +957,31 @@ nav .hamburger .line {
   background-image: url(images/avatar-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110.15px;
-  width: 103px;
+  height: 6.938rem;
+  width: 6.438rem;
 }
+
 .business-owner .testimonial-img4 {
   background-image: url(images/avatar-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110.15px;
-  width: 103px;
+  height: 6.938rem;
+  width: 6.438rem;
 }
 
 .testimonial-info {
- align-items: flex-start;
+ align-self: center;
  gap: 0.5rem;
 }
 
 .testimonial-info .name {
   font-weight: var(--fw-700);
+  align-self: flex-start;
 }
 
 .testimonial-info .company {
   opacity: 0.7;
+  align-self: flex-start;
 }
 
 @media (min-width: 48em) {
@@ -1105,12 +1109,8 @@ footer .summary p {
 
 /*Connect*/
 .connect {
-  
   align-items: flex-start;
-
 }
-
-
 
 .connect .email a address {
   color: var(--clr-neutral-100);
@@ -1133,14 +1133,12 @@ footer .social-icon {
   color: var(--clr-neutral-100);
 }
 
-
 /*Horizontal line divider*/
 .footer-divider {
   color: var(--clr-bg-100);
   height: 0.5px;
   opacity: 20%;
 }
-
 
 /*Terms and policies*/
 .terms-wrapper {
@@ -1150,35 +1148,29 @@ footer .social-icon {
 
 .terms-wrapper p {
   font-size: var(--fs-200);
-  
 }
 
 .policy-wrapper {
   gap: 1rem;
 }
 
-/*Media queries Footer*/
 
+/*Media queries Footer*/
 @media (min-width: 55em) {
   footer {
     padding: 6rem 0;
   }
 
   footer .container {
-    
     grid-template-rows: 1fr auto  auto;
     gap: 2rem;
   }
 
-  
-  
   .footer-content {
     display: grid;
-    /*grid-template-columns: 1fr auto auto auto auto;*/
     grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
     gap: 4rem;
   }
-  
 }
 
 @media (min-width: 87.5em) {
