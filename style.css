@@ -1040,14 +1040,32 @@ nav .hamburger .line {
 
 /*FOOTER*/
 
+/*Footer general styles*/
 footer {
   background-color: var(--clr-bg-300);
   color: var(--clr-neutral-100);
 }
 
+h5 {
+  font-size: var(--fs-400);
+  letter-spacing: 0.02em;
+  font-weight: var(--fw-700);
+}
+
+.footer-company ul li a,
+.footer-services ul li a,
+.footer-product ul li a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+  font-size: var(--fs-300);
+}
+
+/*Footer Summary*/
+
 footer .logo-text {
   color: var(--clr-neutral-100);
   text-decoration: none;
+  font-size: var(--fs-400);
 }
 
 footer .summary p {
@@ -1061,11 +1079,7 @@ footer .summary p {
 
 }
 
-h5 {
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-  font-weight: var(--fw-700);
-}
+
 
 .connect .email a address {
   color: var(--clr-neutral-100);
@@ -1088,11 +1102,18 @@ footer .social-icon {
   color: var(--clr-neutral-100);
 }
 
-.footer-company ul li a,
-.footer-services ul li a,
-.footer-product ul li a {
-  color: var(--clr-neutral-100);
-  text-decoration: none;
+
+
+
+.footer-divider {
+  color: var(--clr-bg-100);
+  height: 0.5px;
 }
 
+
+/*Terms and policies*/
+
+.terms-wrapper p {
+  font-size: var(--fs-200);
+}
 
