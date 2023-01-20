@@ -1044,12 +1044,14 @@ nav .hamburger .line {
 footer {
   background-color: var(--clr-bg-300);
   color: var(--clr-neutral-100);
+  padding: 5.25rem 0;
 }
 
 h5 {
   font-size: var(--fs-400);
   letter-spacing: 0.02em;
   font-weight: var(--fw-700);
+  margin-bottom: 1.5rem;
 }
 
 .footer-company ul li a,
@@ -1058,6 +1060,33 @@ h5 {
   color: var(--clr-neutral-100);
   text-decoration: none;
   font-size: var(--fs-300);
+}
+
+.footer-company ul li,
+.footer-services ul li,
+.footer-product ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-company ul li:last-child,
+.footer-services ul li:last-child,
+.footer-product ul li:last-child {
+  margin-bottom: 0;
+}
+
+/*Footer general layout*/
+
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
 /*Footer Summary*/
@@ -1070,11 +1099,13 @@ footer .logo-text {
 
 footer .summary p {
   font-style: italic;
+  margin-top: 1.5rem;
+  max-width: 30ch;
 }
 
 /*Connect*/
 .connect {
-  gap: 1.5rem;
+  
   align-items: flex-start;
 
 }
@@ -1091,11 +1122,11 @@ footer .social-icon {
 
 .connect-content {
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .socials {
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .socials a .bi {
@@ -1103,17 +1134,58 @@ footer .social-icon {
 }
 
 
-
-
+/*Horizontal line divider*/
 .footer-divider {
   color: var(--clr-bg-100);
   height: 0.5px;
+  opacity: 20%;
 }
 
 
 /*Terms and policies*/
+.terms-wrapper {
+  align-items: flex-start;
+  gap: 1.5rem;
+}
 
 .terms-wrapper p {
   font-size: var(--fs-200);
+  
 }
+
+.policy-wrapper {
+  gap: 1rem;
+}
+
+/*Media queries Footer*/
+
+@media (min-width: 55em) {
+  footer {
+    padding: 6rem 0;
+  }
+
+  footer .container {
+    
+    grid-template-rows: 1fr auto  auto;
+    gap: 2rem;
+  }
+
+  
+  
+  .footer-content {
+    display: grid;
+    /*grid-template-columns: 1fr auto auto auto auto;*/
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+    gap: 4rem;
+  }
+  
+}
+
+@media (min-width: 87.5em) {
+  footer {
+    padding: 7.5rem 0;
+  }
+}
+
+
 
