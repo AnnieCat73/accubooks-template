@@ -1165,7 +1165,8 @@ footer .social-icon {
   gap: 1.5rem;
 }
 
-.terms-wrapper p {
+.terms-wrapper a {
+  cursor: pointer;
   font-size: var(--fs-200);
 }
 
