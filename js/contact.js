@@ -1,5 +1,13 @@
 //JavaScript for the contact form
 
+/*PLEASE NOTE - you can activate this form by
+creating an access key at https://web3forms.com/
+
+This is a working contact form. To receive email, 
+Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+Create Access Key here 👉 https://web3forms.com/
+*/
+
 
 (function () {
   "use strict";

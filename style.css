@@ -253,6 +253,11 @@ h3 {
   padding: 0 1.5rem;
 }
 
+.container-x-small {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 /*Section padding*/
 section {
   padding: 5.25rem 0;
@@ -286,6 +291,10 @@ section:nth-of-type(6) {
   margin-top: 3.5rem;/*56px*/
 }
 
+.flow-content-xlarge > * + * { 
+  margin-top: 4rem;/*64px*/
+}
+
 /*Flexbox*/
 .split {
   display: flex;
@@ -316,6 +325,10 @@ section:nth-of-type(6) {
   .flow-content-large > * + * { 
     margin-top: 4rem;/*64px*/
   }
+
+  .flow-content-xlarge > * + * { 
+    margin-top: 4.5rem;/*72px*/
+  }
 }
 
 /*desktop*/
@@ -331,6 +344,9 @@ section:nth-of-type(6) {
 
   .flow-content-large > * + * { 
     margin-top: 4.5rem;/*72px*/
+  }
+  .flow-content-xlarge > * + * { 
+    margin-top: 5rem;/*80px*/
   }
 }
 
@@ -1209,10 +1225,7 @@ footer .social-icon {
   padding: 0 1.5rem;
 }
 
-.container-x-small {
-  max-width: 50rem;
-  margin: 0 auto;
-}
+
 
 .page-content h1 {
   color: var(--clr-accent-400);
@@ -1386,6 +1399,7 @@ footer .social-icon {
 
 .contact {
   margin: 5.7rem 0;
+  gap: 5rem;
 }
 
 /*Form styles*/
@@ -1435,19 +1449,14 @@ form label {
 .input-type {
   gap: 0.5rem;
   align-items: flex-start;
- 
 }
 
 .inputs {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  
   width: 100%;
 }
-
-
-  
 
 .input-type input,
 .input-type textarea {
@@ -1457,11 +1466,11 @@ form label {
   border: 1px solid rgba(89, 86, 86, 0.7);
   width: 100%;
 }
+
 .input-type input:focus,
 .input-type textarea:focus {
   outline-color: transparent;
   border: 4px solid rgba(43, 41, 41, 0.7);
- 
   background-color: #ececf5;
 }
 
@@ -1494,16 +1503,21 @@ form label {
   }
 }
 
-
 @media (min-width: 87.5em) {
   .form-container {
     padding: 5rem;
   }
 }
 
-
-
 /*Form validation*/
+
+/*PLEASE NOTE - you can activate this form by
+creating an access key at https://web3forms.com/
+
+This is a working contact form. To receive email, 
+Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+Create Access Key here 👉 https://web3forms.com/
+*/
 
 .invalid-feedback,
 .empty-feedback {
