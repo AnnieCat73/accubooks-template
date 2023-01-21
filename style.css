@@ -34,7 +34,7 @@ CUSTOM VARIABLES
   --clr-bg-100: #ffffff;/*Light background color*/
   --clr-bg-200: #f7f7f7;/*Light grey background color*/
   --clr-bg-300: #316CE3;/*Blue background color*/
-  --clr-error: #E65c5c;/*Error color on form*/
+  --clr-error: #b70d0d;/*Error color on form*/
   --clr-success: #47b26b;/*Success color on form*/
   --clr-hover: #e95517;/*Hover color on primary, secondary button and on any links--*/
   
@@ -1202,7 +1202,7 @@ footer .social-icon {
 
 /*OTHER PAGES*/
 
-/*404*/
+/*404 PAGE*/
 
 .page-content {
   margin: 7.5rem 0;
@@ -1220,7 +1220,7 @@ footer .social-icon {
 }
 
 
-/*PRICING*/
+/*PRICING PAGE*/
 
 /*Plans*/
 
@@ -1380,3 +1380,147 @@ footer .social-icon {
     margin-top: 11rem;
   }
 }
+
+
+/*CONTACT PAGE*/
+
+.contact {
+  margin: 5.7rem 0;
+}
+
+/*Form styles*/
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.form-container {
+  background-color: var(--clr-bg-300);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 6px;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-container p, 
+.form-container h2,
+.form-container label {
+  color: var(--clr-neutral-100);
+}
+
+.headings-wrapper {
+  margin-bottom: 4rem;
+}
+
+form label {
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  font-weight: var(--fw-600);
+  letter-spacing: 0.05em;
+}
+
+.form-container ::placeholder {
+  color: var(--clr-neutral-300);
+  font-size: 1rem;
+  font-weight: var(--fw-100);
+}
+
+.input-type {
+  gap: 0.5rem;
+  align-items: flex-start;
+ 
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  
+  width: 100%;
+}
+
+
+  
+
+.input-type input,
+.input-type textarea {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  outline: 0;
+  border: 1px solid rgba(89, 86, 86, 0.7);
+  width: 100%;
+}
+.input-type input:focus,
+.input-type textarea:focus {
+  outline-color: transparent;
+  border: 4px solid rgba(43, 41, 41, 0.7);
+ 
+  background-color: #ececf5;
+}
+
+.form-container button {
+  background-color: var(--clr-accent-400);
+  border: 0;
+  width: 100%;
+}
+
+.feedback {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+}
+
+.result {
+  font-size: var(--fs-300);
+  text-align: center;
+  color: var(--clr-neutral-300);
+  opacity: 0.7;
+}
+
+@media (min-width: 42em) {
+  .form-container {
+    padding: 5rem;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 87.5em) {
+  .form-container {
+    padding: 5rem;
+  }
+}
+
+
+
+/*Form validation*/
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  
+  border: 3px solid #dc3545;
+}
+
