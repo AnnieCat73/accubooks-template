@@ -1498,6 +1498,9 @@ Create Access Key here 👉 https://web3forms.com/
 
 
 /*ABOUT PAGE*/
+.team {
+  background-color: var(--clr-bg-200);
+}
 
 .team .team-headings {
   max-width: 80ch;
@@ -1660,5 +1663,10 @@ Create Access Key here 👉 https://web3forms.com/
     
   }
 
+}
+
+.about-cta-content  {
+  gap: 2rem;
+  align-items: flex-start;
 }
 
