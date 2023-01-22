@@ -1495,3 +1495,170 @@ Create Access Key here 👉 https://web3forms.com/
   border: 3px solid #dc3545;
 }
 
+
+
+/*ABOUT PAGE*/
+
+.team .team-headings {
+  max-width: 80ch;
+  margin-bottom: 3rem;
+}
+
+.team-cards  {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 4rem;
+}
+
+.card-seo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card-seo .seo-img {
+  background-image: url(images/seo-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.card-seo .card-content {
+  align-self: center;
+  justify-self: end;
+  max-width: 35ch;
+}
+
+.team .card-content {
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.team .card-headings p {
+  color: var(--clr-accent-500);
+  font-weight: var(--fw-600);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.team .email a address {
+  color: var(--clr-neutral-300);
+  text-decoration: underline;
+}
+
+.team .socials a .bi {
+  color: var(--clr-accent-400);
+}
+
+.card-seo .card-content {
+  order: -1;
+}
+
+.team-row .team-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+}
+
+.team-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 2rem;
+}
+
+.team-row .card-content {
+  box-shadow: var(--box-shadow);
+}
+
+.team-row .team-img-1 {
+  background-image: url(images/team-1.jpg);
+}
+.team-row .team-img-2 {
+  background-image: url(images/team-2.jpg);
+}
+.team-row .team-img-3 {
+  background-image: url(images/team-3.jpg);
+}
+.team-row .team-img-4 {
+  background-image: url(images/team-4.jpg);
+}
+
+
+.team-row .team-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+@media (min-width: 34em) {
+
+  .team .team-headings {
+    
+    margin-bottom: 4rem;
+  }
+  .card-seo {
+   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+
+  
+
+  .team-row .team-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+
+@media (min-width: 48em) {
+
+  .team-cards {
+    gap: 6rem;
+  }
+
+  .team .team-headings {
+    
+    margin-bottom: 5rem;
+  }
+  .team-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .team-row .team-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+}
+@media (min-width: 62em) {
+  .card-seo {
+   
+    
+    grid-template-rows: 30rem;
+    
+  }
+
+  
+
+}
+
+@media (min-width: 78.5em) {
+  .team-cards {
+    gap: 7rem;
+  }
+
+  .team-row {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+}
+
