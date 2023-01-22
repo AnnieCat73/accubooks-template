@@ -1498,13 +1498,40 @@ Create Access Key here 👉 https://web3forms.com/
 
 
 /*ABOUT PAGE*/
-.team {
-  background-color: var(--clr-bg-200);
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
-.team .team-headings {
-  max-width: 80ch;
-  margin-bottom: 3rem;
+.about-hero .about-headings p {
+  max-width: 90ch;
+}
+
+.about-do {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.purpose-text {
+  gap: 2rem;
+}
+
+.purpose-text p span {
+  font-weight: var(--fw-600);
+}
+
+@media (min-width: 48em) {
+  
+  
+}
+
+/*Team*/
+
+.team {
+  background-color: var(--clr-bg-200);
 }
 
 .team-cards  {
@@ -1524,7 +1551,6 @@ Create Access Key here 👉 https://web3forms.com/
   background-image: url(images/seo-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .card-seo .card-content {
@@ -1563,13 +1589,11 @@ Create Access Key here 👉 https://web3forms.com/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  
 }
 
 .team-row {
   display: grid;
   grid-template-columns: 1fr;
-  
   gap: 2rem;
 }
 
@@ -1580,16 +1604,18 @@ Create Access Key here 👉 https://web3forms.com/
 .team-row .team-img-1 {
   background-image: url(images/team-1.jpg);
 }
+
 .team-row .team-img-2 {
   background-image: url(images/team-2.jpg);
 }
+
 .team-row .team-img-3 {
   background-image: url(images/team-3.jpg);
 }
+
 .team-row .team-img-4 {
   background-image: url(images/team-4.jpg);
 }
-
 
 .team-row .team-img {
   background-repeat: no-repeat;
@@ -1600,17 +1626,16 @@ Create Access Key here 👉 https://web3forms.com/
 @media (min-width: 34em) {
 
   .team .team-headings {
-    
     margin-bottom: 4rem;
   }
+
+  .team-headings p {
+    max-width: 80ch;
+  }
   .card-seo {
-   
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    
   }
-
-  
 
   .team-row .team-card {
     display: grid;
@@ -1619,17 +1644,43 @@ Create Access Key here 👉 https://web3forms.com/
   }
 }
 
-
 @media (min-width: 48em) {
+  .about-hero {
+    gap: 5rem;
+  }
+
+  .about-do {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-do .about-do-content {
+    align-self: center;
+    order: -1;
+    max-width: 30ch;
+  }
+
+  .purpose-text {
+    flex-direction: row;
+  }
+
+  .purpose-text .text-col-1 {
+    flex-basis: 40%;
+    margin-top: -1em;
+  }
+
+  .purpose-text .text-col-2 {
+    flex-basis: 60%;
+  }
 
   .team-cards {
     gap: 6rem;
   }
 
   .team .team-headings {
-    
     margin-bottom: 5rem;
   }
+
   .team-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -1638,19 +1689,13 @@ Create Access Key here 👉 https://web3forms.com/
   .team-row .team-card {
     display: grid;
     grid-template-columns: 1fr;
-    
   }
 }
+
 @media (min-width: 62em) {
   .card-seo {
-   
-    
     grid-template-rows: 30rem;
-    
   }
-
-  
-
 }
 
 @media (min-width: 78.5em) {
@@ -1660,9 +1705,7 @@ Create Access Key here 👉 https://web3forms.com/
 
   .team-row {
     grid-template-columns: repeat(4, 1fr);
-    
   }
-
 }
 
 .about-cta-content  {
