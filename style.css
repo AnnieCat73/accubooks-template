@@ -1713,3 +1713,32 @@ Create Access Key here 👉 https://web3forms.com/
   align-items: flex-start;
 }
 
+
+
+/*COOKIE POLICY*/
+
+.cookie-types ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.cookie-types ol li {
+ 
+  
+}
+
+/*PRIVACY*/
+
+.use ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/*TERMS*/
+
+.terms-use ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.terms-use ol li {
+  
+}
