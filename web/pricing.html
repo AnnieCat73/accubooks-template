@@ -63,97 +63,123 @@
           </ul>
           <a class="btn btn-secondary" href="contact.html">Schedule a call</a>
             
-          </div>
+          
         </div> <!-- end of navbar -->
       </div> <!-- end of container-prim -->
     </nav> <!-- end of nav -->
     <!-- end of navigation -->
   </header>
-
+  <!--End of Header-->
   <!--Main-->
   <main>
-    <div class="container-small">
-      <!--Contact-->
-      <section class="contact flow-content-xlarge padding-bottom padding-top-large">
-        <h1>Enhance your financial situation,
-          expand your company’s operations
-        </h1>
-        <div class="form-container container-x-small">
-          <div class="headings-wrapper flow-content-small">
-            <h2>
-              Let's get in touch
-            </h2>
-            <p>
-              Our experts  will assist you in finding the right solutions. Please fill out the form below - Schedule a consultation with one of our experts today.
-            </p>
+    <div class="container">
+      <section class="plans-content padding-bottom padding-top-large reveal">
+        <div class="plans-headings flow-content-small">
+          <h1>Customizable Plans Tailored to Your Needs</h1>
+          <p>AccuBooks’s adaptable packages are affordably designed to provide the necessary tools and resources for you to confidently manage your business.</p>
+        </div>
+
+        <div class="plans container-small">
+          <!--Small plan-->
+          <div class="plan-small">
+            <div class="plan-type split-column">
+              <p>Growth</p>
+              <div class="plan-price split">
+                <h4>$999</h4><span class="text-300 label">/month</span>
+              </div>
+            </div>
+            <div class="plan-details split-column">
+              <div class="plan-list split-column">
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Consequat ex proident</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Deserunt sit cupidatat</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Amet id ea et nisi cillum </p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-secondary">Get started</a>
+            </div>
           </div>
-          <!--Form-->
-          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-            <input type="checkbox" name="botcheck" id="" style="display: none;" />
-  
-            <div class="inputs">
-              <div class="input-type split-column">
-                <label for="fname">First Name</label>
-                <input type="text" name="name" id="first_name" placeholder="John" required  />
-                <div class="feedback empty-feedback invalid-feedback">
-                  Please provide your first name.
-                </div>
-              </div>
-              <div class="input-type split-column">
-                <label for="lname">Last Name</label>
-                <input type="text" name="last_name" id="lname" placeholder="Doe" required  />
-                <div class="feedback empty-feedback invalid-feedback">
-                  Please provide your last name.
-                </div>
-              </div>
-            </div>  
-  
-            <div class="inputs">
-              <div class="input-type split-column">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="you@company.com" required  />
-                <div class="feedback empty-feedback">
-                  Please provide your email address.
-                </div>
-                <div class="feedback invalid-feedback text-red-400 text-sm mt-1">
-                  Please provide a valid email address.
-                </div>
-              </div>
-  
-              <div class="input-type split-column">
-                <label for="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required  />
-  
-                <div class="feedback empty-feedback invalid-feedback">
-                  Please provide your phone number.
-                </div>
+          <!--Popular plan-->
+          <div class="plan-popular">
+            <p class="plan-tag text-300">Most popular</p>
+            <div class="plan-type split-column">
+              <p>Essential</p>
+              <div class="plan-price split">
+                <h2>$500</h2><span class="text-300 label">/month</span>
               </div>
             </div>
-            <div class="input-type split-column">
-              <label for="message">Your Message</label>
-  
-              <textarea rows="7" name="message" id="message" placeholder="Your Message" required></textarea>
-              <div class="feedback empty-feedback invalid-feedback">
-                Please enter your message.
+            <div class="plan-details split-column">
+              <div class="plan-list split-column">
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Consequat ex proident</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Deserunt sit cupidatat</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Amet id ea et nisi cillum</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Excepteur nisi eiusmod</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Magna anim commodo</p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Get started</a>
+            </div>
+          </div>
+          <!--Small plan-->
+          <div class="plan-small">
+            <div class="plan-type split-column">
+              <p>Premium</p>
+              <div class="plan-price split">
+                <h4>$1500</h4><span class="text-300 label">/month</span>
+                
               </div>
             </div>
-            
-            <button type="submit" class="btn btn-primary">
-              Talk to an expert today
-            </button>
-            
-            <p class="result" id="result"></p>
-          </form>
-          <!--End of Form-->
+            <div class="plan-details split-column">
+              <div class="plan-list split-column">
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Consequat ex proident</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Deserunt sit cupidatat</p>
+                </div>
+                <div class="plan-item split">
+                  <i class="bi bi-check2"></i>
+                  <p class="text-300">Amet id ea et nisi cillum </p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-secondary">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="plans-cta split-column">
+          <div class="cta-text flow-content-small">
+            <h2>Can't find what you need?</h2>
+            <p>Consult with one of our specialists and we will craft a package specifically tailored to the requirements of your business.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Talk to an expert</a>
         </div>
       </section>
-      <!--End of Contact-->
     </div>
-  <!--End of Main-->
   </main>
-   
+  <!--End of Main-->
   <!--Footer-->
   <footer>
     <div class="container">
@@ -243,6 +269,6 @@
   
   <!-- Scripts -->
   <script src="js/script.js"></script> <!-- Custom scripts -->
-  <script src="js/contact.js"></script><!-- Contact form scripts -->
+  <script src="js/reveal.js"></script> <!-- Reveal scripts -->
 </body>
 </html>

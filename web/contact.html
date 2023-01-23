@@ -62,67 +62,98 @@
             <li><a href="#testimonials">Testimonials</a></li>
           </ul>
           <a class="btn btn-secondary" href="contact.html">Schedule a call</a>
+            
+          </div>
         </div> <!-- end of navbar -->
       </div> <!-- end of container-prim -->
     </nav> <!-- end of nav -->
     <!-- end of navigation -->
   </header>
-  <!--End of Header-->
+
   <!--Main-->
   <main>
-    <!--Hero-Service section-->
-    <section class="hero-service padding-bottom padding-top-large ">
-      <div class="container flow-content-xlarge">
-        <h1 class>Tax Advisory and Tax Management</h1>
-        <div class="hero-service-content">
-          <div class="hero-text flow-content-small">
-            <h2>A multi-angled approach
+    <div class="container-small">
+      <!--Contact-->
+      <section class="contact flow-content-xlarge padding-bottom padding-top-large reveal">
+        <h1>Enhance your financial situation,
+          expand your company’s operations
+        </h1>
+        <div class="form-container container-x-small">
+          <div class="headings-wrapper flow-content-small">
+            <h2>
+              Let's get in touch
             </h2>
-            <p>Accubooks  simplifies managing your taxes with our comprehensive tax services, including identifying deductions, streamlining expense reporting and consolidating interest credit deductions.
+            <p>
+              Our experts  will assist you in finding the right solutions. Please fill out the form below - Schedule a consultation with one of our experts today.
             </p>
           </div>
-          <div class="img-tax"></div>
+          <!--Form-->
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="inputs">
+              <div class="input-type split-column">
+                <label for="fname">First Name</label>
+                <input type="text" name="name" id="first_name" placeholder="John" required  />
+                <div class="feedback empty-feedback invalid-feedback">
+                  Please provide your first name.
+                </div>
+              </div>
+              <div class="input-type split-column">
+                <label for="lname">Last Name</label>
+                <input type="text" name="last_name" id="lname" placeholder="Doe" required  />
+                <div class="feedback empty-feedback invalid-feedback">
+                  Please provide your last name.
+                </div>
+              </div>
+            </div>  
+  
+            <div class="inputs">
+              <div class="input-type split-column">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="you@company.com" required  />
+                <div class="feedback empty-feedback">
+                  Please provide your email address.
+                </div>
+                <div class="feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide a valid email address.
+                </div>
+              </div>
+  
+              <div class="input-type split-column">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required  />
+  
+                <div class="feedback empty-feedback invalid-feedback">
+                  Please provide your phone number.
+                </div>
+              </div>
+            </div>
+            <div class="input-type split-column">
+              <label for="message">Your Message</label>
+  
+              <textarea rows="7" name="message" id="message" placeholder="Your Message" required></textarea>
+              <div class="feedback empty-feedback invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+              Talk to an expert today
+            </button>
+            
+            <p class="result" id="result"></p>
+          </form>
+          <!--End of Form-->
         </div>
-      </div>
-    </section>
-    <!--End of Hero Service section-->
-    <!--Mid-Section-->
-    <section class="mid-section padding">
-      <div class="container">
-        <div class="service-types-container">
-          <div class="service-type flow-content-small split-column">
-            <h3>Bookkeeping</h3>
-            <p>Every month your bookkeeper will organize your business transactions and work on your books, at the end of the year, we will provide you a comprehensive package that includes everything required for tax filing and also a review of your business performance.
-            </p>
-          </div>
-          <div class="service-type flow-content-small split-column">
-            <h3>Tax Support</h3>
-            <p>Our services include year-round tax support with on-demand and unlimited tax consultations to ensure no deductions are missed.</p>
-          </div>
-          <div class="service-type flow-content-small split-column">
-            <h3>Filing of Taxes</h3>
-            <p>When it's time to file, your dedicated Tax Coordinator will collect all necessary documents and forms, and connect you with a professional to file your taxes on time.</p>
-          </div>
-        </div>
-        <hr class="nav-line">
-        <div class="service-advice flow-content-small container-x-small">
-          <h3>Advice you can rely on with confidence</h3>
-          <p>At AccuBooks, our advisors use their extensive knowledge and experience to provide your business with precise and tailored tax advice. Our team includes business owners, auditors, and professionals from various tax backgrounds to ensure that the advice we provide is beneficial for your business.
-          </p>
-        </div>
-      </div>  
-    </section>
-    <!--End of Mid-Section-->
-    <!--Service-cta-->
-    <section class="service-cta padding">
-      <div class="container">
-        <h2>Get expert tax advice from AccuBooks today</h2>
-        <a href="#" class="btn btn-primary">Book a consultation</a>
-      </div>
-    </section>
-    <!--End of Service-cta-->
-  </main>
+      </section>
+      <!--End of Contact-->
+    </div>
   <!--End of Main-->
+  </main>
+   
   <!--Footer-->
   <footer>
     <div class="container">
@@ -186,10 +217,13 @@
         </div>
       </div>
       <!--End of Footer Content-->
+
       <!--Footer horizontal line divider-->
       <hr class="footer-divider">
       <!--End of Footer horizontal line divider-->
+
       <!--Terms-->
+      
       <div class="terms-wrapper split-column">
         <a class="copy">
           <span class="copy">&#169;</span> AccuBooks
@@ -209,5 +243,7 @@
   
   <!-- Scripts -->
   <script src="js/script.js"></script> <!-- Custom scripts -->
+  <script src="js/contact.js"></script><!-- Contact form scripts -->
+  <script src="js/reveal.js"></script> <!-- Reveal scripts -->
 </body>
 </html>
