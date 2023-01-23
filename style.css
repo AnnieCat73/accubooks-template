@@ -766,8 +766,6 @@ nav .hamburger .line {
 }
 
 .service {
-  
-  
   box-shadow: var(--box-shadow);
 }
 
@@ -800,7 +798,6 @@ nav .hamburger .line {
   font-weight: var(--fw-600);
   align-self: flex-start;
   transition: all ease-in-out .3s;
-  
 }
 
 .service .link:hover,
@@ -890,28 +887,11 @@ nav .hamburger .line {
 }
 
 .about-img {
-  background-image: url(images/about-image.jpg);
+  background-image: url(images/about-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 0px bottom 0px;
   position: relative;
-}
-
-.seo {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  color: var(--clr-neutral-100);
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
-}
-
-.seo span {
-  display: block;
-  font-size: var(--fs-200);
-  font-style: italic;
-  opacity: 0.8;
 }
 
 .about-content h2 {
