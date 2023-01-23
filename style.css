@@ -1809,3 +1809,18 @@ Create Access Key here 👉 https://web3forms.com/
     padding: 12rem 0;
   }
 }
+/*PAYROLL PAGE*/
+
+.hero-service .img-payroll {
+  background-image: url(images/servicepay-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+
+
+@media (min-width: 62em) {
+  .hero-service .img-payroll  {
+    padding: 12rem 0;
+  }
+}
