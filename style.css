@@ -1841,3 +1841,19 @@ Create Access Key here 👉 https://web3forms.com/
     padding: 12rem 0;
   }
 }
+
+/*BUSINESS PAGE*/
+
+.hero-service .img-business {
+  background-image: url(images/service-business.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+
+
+@media (min-width: 62em) {
+  .hero-service .img-business  {
+    padding: 12rem 0;
+  }
+}
