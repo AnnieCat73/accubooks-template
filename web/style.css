@@ -1173,8 +1173,10 @@ footer .social-icon {
 }
 
 .terms-wrapper a {
+  color: var(--clr-neutral-100);
   cursor: pointer;
   font-size: var(--fs-200);
+  text-decoration: none;
 }
 
 .policy-wrapper {
