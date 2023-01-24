@@ -4,7 +4,6 @@ CUSTOM VARIABLES
 :root {
   --ff-sans: "Public Sans", sans-serif;
   
-
   /* mobile/small screen font-sizes */
   --fs-200: 0.813rem;/*13px/small text in Footer*/
   --fs-300: 0.938rem;/*15px/base font small/label*/
@@ -25,7 +24,6 @@ CUSTOM VARIABLES
   --fw-600: 600;/*Semibold*/
   --fw-700: 700;/*bold*/
 
-
   /*Colors*/
   --clr-neutral-100: #ffffff;/*text on blue/orange background*/
   --clr-neutral-300: #2B2E34;/*text light background*/
@@ -36,7 +34,7 @@ CUSTOM VARIABLES
   --clr-bg-300: #316CE3;/*Blue background color*/
   --clr-error: #b70d0d;/*Error color on form*/
   --clr-success: #47b26b;/*Success color on form*/
-  --clr-hover: #e95517;/*Hover color on primary, secondary button and on any links--*/
+  --clr-hover: #d84b0f;/*Hover color on primary, secondary button and on any links--*/
   
   /*Border radius*/
   --br: 4px;/*border-radius*/
@@ -48,7 +46,7 @@ CUSTOM VARIABLES
 /*Font sizes for tablet*/
 @media (min-width: 48em) {
   :root {
-     /*
+     /*If don't want to use the fluid heading styles below you can uncomment these instead and delete the fluid (clamp()) styles
       --fs-500: 1.88rem;/*h4*
       --fs-600: 1.75rem;/*h3/*
       --fs-700: 2rem;/*h2*
@@ -66,7 +64,8 @@ CUSTOM VARIABLES
     --fs-400: 1.125rem;/*18px/base font*/
     /*large number font-size*/
     --fs-900: 3rem;/*48px*/
-    /*
+
+    /*If don't want to use the fluid heading styles below you can uncomment these instead and delete the fluid (clamp()) styles
       --fs-500: 1.5rem;/*h4*
       --fs-600: 1.875rem;/*h3/*
       --fs-700: 2.5rem;/*h2*
@@ -76,7 +75,6 @@ CUSTOM VARIABLES
 }
 
 /*Responsive fluid styles for heading font-sizes*/
-/*MAYBE Max viewport width MAY BE WRONG*/
 
 h1 {
   font-size: clamp(2.25rem, 2.0000rem + 1.2500vw, 3.125rem);
@@ -93,7 +91,6 @@ h3 {
 h4 {
   font-size: clamp(1.25rem, 1.1786rem + 0.3571vw, 1.5rem);
 }
-
 
 
 /*RESET*/
@@ -150,7 +147,6 @@ ol {
   padding: 0;
 }
 
-
 /*
   Improve media defaults
 */
@@ -193,8 +189,6 @@ body {
 }
 
 /*Typography*/
-
-
 h2,
 h3,
 h4 {
@@ -222,8 +216,6 @@ h3 {
   line-height: 1.2;
   letter-spacing: -0.017px;
 }
-
-
 
 /*small body/base text styles*/
 .text-300 {
@@ -260,7 +252,6 @@ h3 {
 }
 
 /*Section padding*/
-
 .padding {
   padding: 5.25rem 0;
 }
@@ -285,6 +276,7 @@ h3 {
   .padding-bottom {
     padding-bottom: 6rem;
   }
+
   .padding-top {
     padding-top: 3.5rem;
   }
@@ -305,6 +297,7 @@ h3 {
   .padding-bottom {
     padding-bottom: 7.5rem;
   }
+
   .padding-top {
     padding-top: 5rem;
   }
@@ -315,11 +308,13 @@ h3 {
 }
 
 /*Text spacing*/
+
+/*Spacing between section heading and next elements*/
 .flow-content-small > * + * { 
   margin-top: 1rem;/*16px*/
 }
 
-/*Spacing between section heading and next element not part of section heading*/
+/*Spacing between section heading and next elements*/
 .flow-content-large > * + * { 
   margin-top: 3.5rem;/*56px*/
 }
@@ -348,6 +343,7 @@ h3 {
   .flow-content-large > * + * { 
     margin-top: 4.5rem;/*72px*/
   }
+
   .flow-content-xlarge > * + * { 
     margin-top: 5rem;/*80px*/
   }
@@ -364,7 +360,6 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-
 
 
 /*COMPONENTS*/
@@ -396,14 +391,13 @@ h3 {
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--clr-hover);
-  
 }
 
 /*Secondary button styles*/
 .btn-secondary {
   border: 1px solid var(--clr-neutral-300);
   color: var(--clr-neutral-300);
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .8s;
 }
 
 .btn-secondary:hover,
@@ -412,7 +406,7 @@ h3 {
   color: var(--clr-neutral-100);
 }
 
-/*scroll animation for each section*/
+/*SCROLL ANIMATION for each section/class used in javaScript file reveal.js*/
 
 .reveal {
   position: relative;
@@ -427,7 +421,6 @@ h3 {
 }
 
 /*underline animation for each section*/
-
 .hidden {
   opacity: 0;
   transition: all 1s;
@@ -445,8 +438,6 @@ h3 {
   filter: blur(0);
   transform: translateX(0);/*can also do 0%*/
 }
-
-
 
 /*HEADER*/
 
@@ -481,7 +472,7 @@ nav {
 
 .logo-text:hover,
 .logo-text:focus {
- 
+ opacity: 0.8;
 }
 
 nav .navbar {
@@ -572,6 +563,7 @@ nav .hamburger .line {
     width: 100%;
     z-index: 1;
   }
+
   nav {
     background-color: var(--clr-bg-100);
   }
@@ -639,7 +631,6 @@ nav .hamburger .line {
   background-position: center center;
   min-height: 80vh;
   position: relative;
-  
 }
 
 .hero::after {
@@ -651,7 +642,6 @@ nav .hamburger .line {
   left: 0;
   top: 0;
   position: absolute;
-  
 }
 
 .hero-content {
@@ -659,7 +649,6 @@ nav .hamburger .line {
   align-items: flex-start;
   justify-content: center;
   z-index: 1;
-  
 }
 
 .hero-headings {
@@ -732,7 +721,6 @@ nav .hamburger .line {
   display: grid;
   grid-template-columns: 1fr;
   gap: 6rem;
-
 }
 
 .stat-item {
@@ -910,7 +898,6 @@ nav .hamburger .line {
 }
 .about-content a:hover {
   opacity: 0.8;
-  
 }
 
 
@@ -1040,7 +1027,6 @@ nav .hamburger .line {
   left: 0;
   top: 0;
   position: absolute;
-  
 }
 
 .cta-content {
@@ -1054,11 +1040,10 @@ nav .hamburger .line {
 
 .cta-headings {
   color: var(--clr-neutral-100);
-  
 }
+
 .cta-headings p {
   margin-bottom: 2rem;
-  
 }
 
 @media (min-width: 87.5em) {
@@ -1105,7 +1090,6 @@ h5 {
 }
 
 /*Footer general layout*/
-
 
 footer .container {
   display: grid;
@@ -1182,7 +1166,6 @@ footer .social-icon {
 .policy-wrapper {
   gap: 1rem;
 }
-
 
 /*Media queries Footer*/
 @media (min-width: 55em) {
@@ -1294,7 +1277,6 @@ footer .social-icon {
 
 .plan-popular .bi {
   color: var(--clr-accent-400);
-  
 }
 
 /*Plans cta*/
@@ -1436,6 +1418,7 @@ form label {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 87.5em) {
   .contact h1 {
     max-width: 30ch;
@@ -1472,7 +1455,6 @@ Create Access Key here 👉 https://web3forms.com/
 }
 
 
-
 /*ABOUT PAGE*/
 
 .about-hero {
@@ -1499,13 +1481,7 @@ Create Access Key here 👉 https://web3forms.com/
   font-weight: var(--fw-600);
 }
 
-@media (min-width: 48em) {
-  
-  
-}
-
 /*Team*/
-
 .team {
   background-color: var(--clr-bg-200);
 }
@@ -1599,6 +1575,11 @@ Create Access Key here 👉 https://web3forms.com/
   height: 20rem;
 }
 
+.about-cta-content  {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
 @media (min-width: 34em) {
 
   .team .team-headings {
@@ -1684,14 +1665,6 @@ Create Access Key here 👉 https://web3forms.com/
   }
 }
 
-.about-cta-content  {
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-
-
-
 
 /*SERVICE PAGES*/
 
@@ -1750,6 +1723,7 @@ Create Access Key here 👉 https://web3forms.com/
   }
 }
 
+
 /*TAX SERVICE PAGE*/
 
 .hero-service .img-tax {
@@ -1766,6 +1740,7 @@ Create Access Key here 👉 https://web3forms.com/
   }
 }
 
+
 /*PAYROLL PAGE*/
 
 .hero-service .img-payroll {
@@ -1775,12 +1750,12 @@ Create Access Key here 👉 https://web3forms.com/
   padding: 10rem 0;
 }
 
-
 @media (min-width: 62em) {
   .hero-service .img-payroll  {
     padding: 12rem 0;
   }
 }
+
 
 /*BOOKKEEPING PAGE*/
 
@@ -1791,12 +1766,12 @@ Create Access Key here 👉 https://web3forms.com/
   padding: 10rem 0;
 }
 
-
 @media (min-width: 62em) {
   .hero-service .img-bookeeping  {
     padding: 12rem 0;
   }
 }
+
 
 /*BUSINESS PAGE*/
 
@@ -1807,22 +1782,18 @@ Create Access Key here 👉 https://web3forms.com/
   padding: 10rem 0;
 }
 
-
 @media (min-width: 62em) {
   .hero-service .img-business  {
     padding: 12rem 0;
   }
 }
 
+
 /*COOKIE POLICY*/
 
 .cookie-types ol {
   list-style-type: disc;
   list-style-position: inside;
-}
-.cookie-types ol li {
- 
-  
 }
 
 /*PRIVACY*/
@@ -1837,7 +1808,4 @@ Create Access Key here 👉 https://web3forms.com/
 .terms-use ol {
   list-style-type: disc;
   list-style-position: inside;
-}
-.terms-use ol li {
-  
 }
