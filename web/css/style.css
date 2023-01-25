@@ -1820,6 +1820,8 @@ Create Access Key here 👉 https://web3forms.com/
 .cookie-types ol {
   list-style-type: disc;
   list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 /*PRIVACY*/
@@ -1827,6 +1829,8 @@ Create Access Key here 👉 https://web3forms.com/
 .use ol {
   list-style-type: disc;
   list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 /*TERMS*/
@@ -1834,6 +1838,8 @@ Create Access Key here 👉 https://web3forms.com/
 .terms-use ol {
   list-style-type: disc;
   list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 /*404 PAGE*/
