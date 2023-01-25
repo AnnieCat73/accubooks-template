@@ -2,6 +2,8 @@
 A responsive landing page HTML template with additional pages for pricing,
 about, contact, service, 404, terms of service, cookie policy, privacy policy and terms of service.
 
+The landing page template is for an accountancy firm helping small businesses with their accountancy needs.
+
 This is a template made with HTML, CSS and JavaScript only. No frameworks!
 
 Free to use in your projects.
@@ -22,8 +24,8 @@ All images used in the preview are from pexels.com. You can use them if you wish
 
 ### Credits
 - Images by Pexels: https://www.pexels.com/
-- For the social icons I used Bootstrap Icons. They are linked in the head tag. They can be found at
-https://icons.getbootstrap.com/
+- For the social icons I used Bootstrap Icons. They are linked in the head tag. They can be found at https://icons.getbootstrap.com/
+- Form validation for the contact page can be activated  by creating an access key at https://web3forms.com/ This should be a working contact form. To receive email, replace YOUR_ACCESS_KEY_HERE with your actual Access Key. Create Access Key here 👉 https://web3forms.com/
 
 ### CSS Structure
 The CSS structure is mobile first meaning everything up to Media Queries is for small screens and upwards. Media queries start with 48em screen width and upwards and continue with 87.5em screen width and upwards.

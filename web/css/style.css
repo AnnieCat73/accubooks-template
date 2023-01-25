@@ -1,3 +1,32 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Custom variables
+- Resets
+- Utility classes
+- Components
+- Header
+- Hero section
+- Benefits section
+- Stats section
+- Works section
+- About section
+- Testimonials section
+- CTA section
+- Footer section
+- Pricing page
+- Contact page
+- About page
+- Services pages
+- Cookie policy page
+- Privacy policy page
+- Terms of service page
+- 404 page
+
+Please note that for each section I have added the media queries right below so there is no need to scroll down to the end of the css file to locate them. Just go to the end of each section and you will find the corresponding media queries.
+******************************************/
+
 /*
 CUSTOM VARIABLES
 */
@@ -406,7 +435,8 @@ h3 {
   color: var(--clr-neutral-100);
 }
 
-/*SCROLL ANIMATION for each section/class used in javaScript file reveal.js*/
+/*SCROLL ANIMATION for each section/class used in javaScript file reveal.js
+PLEASE NOTE YOU CAN REMOVE THE CLASS FROM THE SECTION ELEMENT IF YOU PREFER NOT TO USE IT*/
 
 .reveal {
   position: relative;
@@ -859,7 +889,6 @@ nav .hamburger .line {
   }
 }
 
-
 /*ABOUT SECTION*/
 
 .about {
@@ -1122,6 +1151,10 @@ footer .summary p {
   align-items: flex-start;
 }
 
+.connect .email a {
+ text-decoration: none;
+}
+
 .connect .email a address {
   color: var(--clr-neutral-100);
 }
@@ -1193,14 +1226,6 @@ footer .social-icon {
 
 
 /*OTHER PAGES*/
-
-/*404 PAGE*/
-
-.page-content h1 {
-  color: var(--clr-accent-400);
-  text-align: center;
-}
-
 
 /*PRICING PAGE*/
 
@@ -1360,6 +1385,7 @@ form label {
 .form-container ::placeholder {
   color: var(--clr-neutral-300);
   font-size: 1rem;
+  opacity: 0.6;
 }
 
 .input-type {
@@ -1431,7 +1457,7 @@ form label {
 creating an access key at https://web3forms.com/
 
 This is a working contact form. To receive email, 
-Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
 Create Access Key here 👉 https://web3forms.com/
 */
 
@@ -1808,4 +1834,11 @@ Create Access Key here 👉 https://web3forms.com/
 .terms-use ol {
   list-style-type: disc;
   list-style-position: inside;
+}
+
+/*404 PAGE*/
+
+.page-content h1 {
+  color: var(--clr-accent-400);
+  text-align: center;
 }
