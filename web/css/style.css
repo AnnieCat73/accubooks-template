@@ -31,6 +31,7 @@ Please note that for each section I have added the media queries right below so 
 CUSTOM VARIABLES
 */
 :root {
+  
   --ff-sans: "Public Sans", sans-serif;
   
   /* mobile/small screen font-sizes */
