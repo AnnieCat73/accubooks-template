@@ -655,7 +655,7 @@ nav .hamburger .line {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/web/images/hero-image-3x.png);
+  background-image: url(/images/hero-image-3x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--clr-bg-200);
@@ -905,7 +905,7 @@ nav .hamburger .line {
 }
 
 .about-img {
-  background-image: url(/web/images/about-img.jpg);
+  background-image: url(/images/about-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 0px bottom 0px;
@@ -981,7 +981,7 @@ nav .hamburger .line {
 }
 
 .business-owner .testimonial-img1 {
-  background-image: url(/web/images/avatar-1.jpg);
+  background-image: url(/images/avatar-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6.938rem;
@@ -989,7 +989,7 @@ nav .hamburger .line {
 }
 
 .business-owner .testimonial-img2 {
-  background-image: url(/web/images/avatar-2.jpg);
+  background-image: url(/images/avatar-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6.938rem;
@@ -997,7 +997,7 @@ nav .hamburger .line {
 }
 
 .business-owner .testimonial-img3 {
-  background-image: url(/web/images/avatar-3.jpg);
+  background-image: url(/images/avatar-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6.938rem;
@@ -1005,7 +1005,7 @@ nav .hamburger .line {
 }
 
 .business-owner .testimonial-img4 {
-  background-image: url(/web/images/avatar-4.jpg);
+  background-image: url(/images/avatar-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6.938rem;
@@ -1038,7 +1038,7 @@ nav .hamburger .line {
 /*CTA SECTION*/
 
 .cta {
-  background-image: url(/web/images/cta-image.png);
+  background-image: url(/images/cta-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1527,7 +1527,7 @@ Create Access Key here 👉 https://web3forms.com/
 }
 
 .card-seo .seo-img {
-  background-image: url(/web/images/seo-image.jpg);
+  background-image: url(/images/seo-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1581,19 +1581,19 @@ Create Access Key here 👉 https://web3forms.com/
 }
 
 .team-row .team-img-1 {
-  background-image: url(/web/images/team-1.jpg);
+  background-image: url(/images/team-1.jpg);
 }
 
 .team-row .team-img-2 {
-  background-image: url(/web/images/team-2.jpg);
+  background-image: url(/images/team-2.jpg);
 }
 
 .team-row .team-img-3 {
-  background-image: url(/web/images/team-3.jpg);
+  background-image: url(/images/team-3.jpg);
 }
 
 .team-row .team-img-4 {
-  background-image: url(/web/images/team-4.jpg);
+  background-image: url(/images/team-4.jpg);
 }
 
 .team-row .team-img {
@@ -1754,7 +1754,7 @@ Create Access Key here 👉 https://web3forms.com/
 /*TAX SERVICE PAGE*/
 
 .hero-service .img-tax {
-  background-image: url(/web/images/tax-img.jpg);
+  background-image: url(/images/tax-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0;
@@ -1771,7 +1771,7 @@ Create Access Key here 👉 https://web3forms.com/
 /*PAYROLL PAGE*/
 
 .hero-service .img-payroll {
-  background-image: url(/web/images/servicepay-img.jpg);
+  background-image: url(/images/servicepay-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0;
@@ -1787,7 +1787,7 @@ Create Access Key here 👉 https://web3forms.com/
 /*BOOKKEEPING PAGE*/
 
 .hero-service .img-bookkeeping {
-  background-image: url(/web/images/service-bookkeeping.jpg);
+  background-image: url(/images/service-bookkeeping.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0;
@@ -1803,7 +1803,7 @@ Create Access Key here 👉 https://web3forms.com/
 /*BUSINESS PAGE*/
 
 .hero-service .img-business {
-  background-image: url(/web/images/service-business.jpg);
+  background-image: url(/images/service-business.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0;
